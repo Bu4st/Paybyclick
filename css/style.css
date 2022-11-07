@@ -1,0 +1,138 @@
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-weight: bold;
+    font-size: 62.5%;
+ --black: rgb(20, 20, 20);
+ --main: #0D6EFD;
+}
+nav {
+
+    margin-top: 20px;
+}
+@media (min-width: 300px) {
+
+}
+
+
+a {
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: none;
+
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+.account-button {
+    font-size: 16px;
+}
+.navbar-toggler {
+    transition: border-color .4s;
+}
+.navbar-toggler:hover {
+    border-color: var(--main);
+}
+.container {
+
+}
+.main-text {
+
+    font-weight: bold;
+}
+.main-p {
+    z-index: 3;
+padding: 15px 15px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+svg {
+    z-index: -1;
+}
+.main-button {
+    z-index: 2;
+    transition:  scale .2s;
+    max-width: 600px;
+margin: 20px;
+padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(25, 98, 255, 0.25);
+    text-transform: uppercase;
+}
+.main-button:hover {
+    scale: 1.06;
+}
+.first {
+    color: white;
+    background-color: var(--main);
+
+}
+.last {
+    background-color: white;
+    color: var(--main);
+
+}
+
+.main-buttons {
+
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+
+
+}
+.custom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.custom-shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 240px;
+}
+
+.custom-shape .shape-fill {
+    fill: var(--main);
+}
+.no {
+    height: 100px;
+    background-color: white;
+display: none;
+    font-size: 72px;
+text-align: center;
+}
+@media (min-width: 665px) {
+    header {
+        display: none;
+    }
+    a {
+        display: none;
+    }
+    .no {
+        display: flex;
+    }
+    .no-center {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
